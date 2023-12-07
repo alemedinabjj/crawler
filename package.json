@@ -1,0 +1,27 @@
+{
+  "name": "price-monitor",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "tsx src/server.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@types/node": "^20.10.4",
+    "dotenv": "^16.3.1",
+    "handlebars": "^4.7.8",
+    "nodemailer": "^6.9.7",
+    "puppeteer": "^21.6.0",
+    "tsx": "^4.6.2",
+    "typescript": "^5.3.3"
+  },
+  "devDependencies": {
+    "@rocketseat/eslint-config": "^2.1.0",
+    "@types/nodemailer": "^6.4.14",
+    "eslint": "^8.55.0"
+  }
+}
