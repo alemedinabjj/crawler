@@ -2,7 +2,7 @@ import puppeteer from 'puppeteer'
 
 export const getBrowser = async () => {
   const browser = await puppeteer.launch({
-    headless: false,
+    headless: 'new',
     args: ['--no-sandbox'],
   })
 
