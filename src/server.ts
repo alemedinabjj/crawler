@@ -65,7 +65,6 @@ async function runMonitor(query: string) {
 
   return jobs
 
-  return jobs
 }
 
 async function run() {
