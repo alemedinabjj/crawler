@@ -8,9 +8,9 @@ const options: ScheduleOptions = {
 
 const runSchedule = schedule(
   // todo dia 12h
-  // '0 12 * * *',
+  '0 12 * * *',
   // a cada 10 segundos
-  '*/10 * * * * *',
+  // '*/10 * * * * *',
   async () => {
     try {
       await run()
