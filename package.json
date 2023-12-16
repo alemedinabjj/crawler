@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "tsx src/server.ts"
+    "dev": "tsx src/server.ts",
+    "build": "tsc -p . --outDir ./build --module commonjs",
+    "start": "node ./build/server.js"
   },
   "keywords": [],
   "author": "",
@@ -14,6 +16,7 @@
     "@types/node": "^20.10.4",
     "dotenv": "^16.3.1",
     "handlebars": "^4.7.8",
+    "node-cron": "^3.0.3",
     "nodemailer": "^6.9.7",
     "puppeteer": "^21.6.0",
     "tsx": "^4.6.2",
@@ -21,6 +24,7 @@
   },
   "devDependencies": {
     "@rocketseat/eslint-config": "^2.1.0",
+    "@types/node-cron": "^3.0.11",
     "@types/nodemailer": "^6.4.14",
     "eslint": "^8.55.0"
   }

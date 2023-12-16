@@ -1,7 +1,7 @@
-import { createTransport, Transporter } from 'nodemailer'
+import { createTransport } from 'nodemailer'
 import 'dotenv/config'
 
-export const getTransporter = async (): Promise<Transporter> => {
+export const getTransporter = async () => {
   const transporter = createTransport({
     host: 'smtp.gmail.com',
     service: 'gmail',

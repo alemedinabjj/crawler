@@ -8,8 +8,10 @@ async function sendEmail({ subject, template, body }: any) {
   const transporter = await getTransporter()
 
   const templatePath = path.join(
-    path.dirname(fileURLToPath(import.meta.url)),
-    `../templates/${template}.hbs`,
+    process.cwd(),
+    'src',
+    'templates',
+    `${template}.hbs`,
   )
 
   const templateSource = fs.readFileSync(templatePath, 'utf-8')
